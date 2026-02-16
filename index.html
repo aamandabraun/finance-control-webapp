@@ -114,6 +114,36 @@
         </div>
       </div>
     </section>   
+
+    <section class="caixa bg-light"> <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <h2>Simule sua Economia</h2>
+              <p>Veja quanto você pode acumular guardando um pouco todo mês com o Finans.</p>
+            
+              <form id="form-simulador">
+                  <div class="form-group">
+                    <label for="valor-mensal">Quanto você quer guardar por mês? (R$)</label>
+                    <input type="number" class="form-control" id="valor-mensal" placeholder="Ex: 100">
+                  </div>
+                  <div class="form-group">
+                    <label for="tempo-meses">Por quantos meses?</label>
+                    <input type="number" class="form-control" id="tempo-meses" placeholder="Ex: 12">
+                  </div>
+                <button type="button" onclick="calcularInvestimento()" class="btn btn-warning text-white">Calcular Resultado</button>
+              </form>
+          </div>
+          
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <div id="resultado-simulacao" class="text-center p-4 border rounded bg-white shadow-sm w-100" style="display: none;">
+              <h4>Em <span id="res-meses" class="text-warning">0</span> meses, você terá:</h4>
+              <h1 class="display-4 text-dark">R$ <span id="res-valor">0,00</span></h1>
+              <p class="text-muted small">*Cálculo baseado em economia direta sem juros.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <footer class="mt-4 mb-4">
       <div class="container">
@@ -131,5 +161,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script src="script.js"></script>
+    
   </body>
 </html>
